@@ -1,6 +1,6 @@
 {
   "name": "@ekwal/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "files": [
@@ -15,8 +15,8 @@
     "eslint": ">=7.30.0"
   },
   "dependencies": {
-    "@ekwal/eslint-config-prettier": "^0.0.1",
-    "@ekwal/eslint-config-vue": "^0.0.1"
+    "@ekwal/eslint-config-prettier": "^0.0.2",
+    "@ekwal/eslint-config-vue": "^0.0.2"
   },
   "devDependencies": {
     "eslint": "^7.30.0"
