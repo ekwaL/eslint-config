@@ -10,15 +10,18 @@ module.exports = {
     }
   ],
   rules: {
-    "vue/max-attributes-per-line": ["warn", {
-      "singleline": {
-        "max": 3,
-        "allowFirstLine": true
-      },      
-      "multiline": {
-        "max": 1,
-        "allowFirstLine": false
+    'vue/max-attributes-per-line': [
+      'warn',
+      {
+        singleline: {
+          max: 3,
+          allowFirstLine: true
+        },
+        multiline: {
+          max: 1,
+          allowFirstLine: false
+        }
       }
-    }]
+    ]
   }
 }

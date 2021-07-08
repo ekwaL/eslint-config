@@ -3,9 +3,7 @@ const typescriptConfig =
 
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: [
-    '@ekwal/eslint-config-base'
-  ],
+  extends: ['@ekwal/eslint-config-base'],
   overrides: [
     ...typescriptConfig,
     {
@@ -13,6 +11,6 @@ module.exports = {
       env: {
         jest: true
       }
-    },
+    }
   ]
 }

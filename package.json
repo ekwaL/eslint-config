@@ -4,9 +4,11 @@
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "lint": "eslint --ext .js, .json, .vue --fix .",
+    "lint": "eslint --ext '.js, .json, .vue' --fix .",
     "diff": "lerna diff",
     "nextver": "lerna version --conventional-commits --yes",
     "release": "lerna publish --conventional-commits"
