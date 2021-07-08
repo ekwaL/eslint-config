@@ -1,0 +1,24 @@
+{
+  "name": "@ekwal/eslint-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "ekwaL <ekwal@protonmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.30.0"
+  },
+  "dependencies": {
+    "@ekwal/eslint-config-prettier": "^0.0.1",
+    "@ekwal/eslint-config-vue": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  }
+}

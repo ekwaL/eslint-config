@@ -1,0 +1,30 @@
+{
+  "name": "@ekwal/eslint-config-base",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "ekwaL <ekwal@protonmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.30.0"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.10",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsonc": "^1.4.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-unicorn": "^34.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  }
+}

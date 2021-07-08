@@ -1,0 +1,28 @@
+{
+  "name": "@ekwal/eslint-config-monorepo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "ekwaL <ekwal@protonmail.com>",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "lint": "eslint --ext .js, .json, .vue --fix .",
+    "diff": "lerna diff",
+    "nextver": "lerna version --conventional-commits --yes",
+    "release": "lerna publish --conventional-commits"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsonc": "^1.4.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-unicorn": "^34.0.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.2"
+  }
+}
