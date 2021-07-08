@@ -3,7 +3,7 @@ const typescriptConfig =
 
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: ['@ekwal/eslint-config-base'],
+  extends: ['@ekwal/eslint-config-base', 'plugin:import/typescript' ],
   overrides: [
     ...typescriptConfig,
     {
