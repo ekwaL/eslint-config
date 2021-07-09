@@ -12,7 +12,8 @@ module.exports = {
   extends: [
     'standard',
     'plugin:import/recommended',
-    'plugin:jsonc/recommended-with-jsonc'
+    'plugin:jsonc/recommended-with-jsonc',
+    'plugin:markdown/recommended'
   ],
   plugins: ['html', 'unicorn'],
   settings: {
@@ -66,6 +67,13 @@ module.exports = {
             ]
           }
         ]
+      }
+    },
+    {
+      files: ['**/*.md/*.js'],
+      rules: {
+        'no-console': 'off',
+        'import/no-unresolved': 'off'
       }
     }
   ],
