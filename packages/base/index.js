@@ -75,9 +75,21 @@ module.exports = {
     },
     {
       files: ['**/*.md/*.js'],
+      parserOptions: {
+        ecmaFeatures: {
+          impliedStrict: true
+        }
+      },
       rules: {
         'no-console': 'off',
-        'import/no-unresolved': 'off'
+        'import/no-unresolved': 'off',
+        'eol-last': 'off',
+        'no-undef': 'off',
+        'no-unused-expressions': 'off',
+        'no-unused-vars': 'off',
+        'padded-blocks': 'off',
+        'strict': 'off',
+        'unicode-bom': 'off'
       }
     }
   ],
