@@ -74,7 +74,7 @@ module.exports = {
       parser: 'markdown-eslint-parser'
     },
     {
-      files: ['**/*.md/*.js'],
+      files: ['*.md.js', '*.md.javascript'],
       parserOptions: {
         ecmaFeatures: {
           impliedStrict: true
