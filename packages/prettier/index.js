@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'plugin:prettier/recommended',
+  extends: ['plugin:prettier/recommended', 'plugin:md/prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -31,9 +31,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.md/*.*'],
+      files: ['*.md'],
+      parser: 'markdown-eslint-parser',
       rules: {
-        'prettier/prettier': 'off'
+        'prettier/prettier': ['warn', { parser: 'markdown' }]
       }
     }
   ]

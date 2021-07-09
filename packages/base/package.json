@@ -20,7 +20,7 @@
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsonc": "^1.4.0",
-    "eslint-plugin-markdown": "^2.2.0",
+    "eslint-plugin-md": "^1.0.19",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-unicorn": "^34.0.1"

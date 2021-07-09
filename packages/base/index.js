@@ -13,7 +13,7 @@ module.exports = {
     'standard',
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
-    'plugin:markdown/recommended'
+    'plugin:md/recommended'
   ],
   plugins: ['html', 'unicorn'],
   settings: {
@@ -68,6 +68,10 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      files: ['*.md'],
+      parser: 'markdown-eslint-parser'
     },
     {
       files: ['**/*.md/*.js'],
