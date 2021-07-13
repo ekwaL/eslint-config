@@ -3,14 +3,14 @@
   "version": "0.1.1",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.js"
   ],
   "main": "index.js",
   "scripts": {},
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "eslint": ">=7.30.0"
   },
