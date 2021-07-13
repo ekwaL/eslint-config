@@ -50,6 +50,7 @@ module.exports = {
               'funding',
               'author',
               'type',
+              'publishConfig',
               'files',
               'exports',
               'main',
