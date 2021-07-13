@@ -1,6 +1,6 @@
 {
   "name": "@ekwal/eslint-config-base",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "publishConfig": {
