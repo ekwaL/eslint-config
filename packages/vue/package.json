@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "@ekwal/eslint-config-ts": "^0.1.2",
-    "eslint-plugin-vue": "^7.13.0"
+    "eslint-plugin-vue": "^7.13.0",
+    "eslint-plugin-vue-scoped-css": "^1.2.2"
   },
   "devDependencies": {
     "eslint": "^7.30.0"

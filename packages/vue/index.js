@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['plugin:vue/vue3-recommended', '@ekwal/eslint-config-ts'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:vue-scoped-css/vue3-recommended',
+    '@ekwal/eslint-config-ts'
+  ],
   overrides: [
     {
       files: ['*.vue'],
