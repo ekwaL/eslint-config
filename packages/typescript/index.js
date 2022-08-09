@@ -3,9 +3,6 @@ const typescriptConfig =
 
 module.exports = {
   plugins: ['@typescript-eslint'],
-  parserOptions: {
-    project: ['./tsconfig.json']
-  },
   extends: [
     '@ekwal/eslint-config-base',
     'plugin:import/typescript',
@@ -16,7 +13,6 @@ module.exports = {
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] }
     }
   },
-
   overrides: [
     ...typescriptConfig,
     {
@@ -45,5 +41,13 @@ module.exports = {
         'unicode-bom': 'off'
       }
     }
-  ]
+  ],
+  rules: {
+    'no-var': 'error',
+    'prefer-const': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off'
+  }
 }
