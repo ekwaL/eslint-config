@@ -1,6 +1,6 @@
 {
   "name": "@ekwal/eslint-config-ts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "files": [
@@ -12,14 +12,14 @@
     "access": "public"
   },
   "peerDependencies": {
-    "typescript": ">=4.0.0",
     "eslint": ">=8.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": ">=4.0.0"
   },
   "dependencies": {
-    "@ekwal/eslint-config-base": "*",
+    "@ekwal/eslint-config-base": "^0.3.0",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "eslint-config-standard-with-typescript": "^22.0.0"
   }

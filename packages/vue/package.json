@@ -1,6 +1,6 @@
 {
   "name": "@ekwal/eslint-config-vue",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "files": [
@@ -15,7 +15,7 @@
     "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@ekwal/eslint-config-ts": "*",
+    "@ekwal/eslint-config-ts": "^0.3.0",
     "eslint-plugin-vue": "^9.3.0",
     "eslint-plugin-vue-scoped-css": "^2.2.0"
   }

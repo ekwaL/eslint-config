@@ -1,6 +1,6 @@
 {
   "name": "@ekwal/eslint-config-base",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
   "files": [
@@ -17,6 +17,7 @@
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.3.1",
@@ -24,7 +25,6 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^43.0.2",
-    "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-yml": "^1.1.0"
   }
 }
