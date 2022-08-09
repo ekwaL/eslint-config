@@ -2,8 +2,10 @@ const confusingBrowserGlobals = require('confusing-browser-globals')
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: '2021',
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      impliedStrict: true
+    }
   },
   env: {
     es2021: true,
@@ -12,16 +14,32 @@ module.exports = {
   },
   extends: [
     'standard',
+    'plugin:unicorn/recommended',
     'plugin:import/recommended',
+    'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
-    'plugin:md/recommended'
+    'plugin:yml/standard',
+    'plugin:markdown/recommended'
   ],
   plugins: ['html', 'unicorn'],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] }
+      node: { extensions: ['.js', '.jsx', '.mjs'] }
     }
   },
+  ignorePatterns: [
+    '*.min.*',
+    '*.d.ts',
+    'dist',
+    'build',
+    'output',
+    'coverage',
+    'CHANGELOG.md',
+    'LICENSE*',
+    'packages-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock'
+  ],
   overrides: [
     {
       files: ['**/*.test.js', '**/*.spec.js', 'test/**/*.js'],
@@ -30,7 +48,11 @@ module.exports = {
       }
     },
     {
-      files: ['*.json', '*.json5'],
+      files: ['**/*.yaml', '**/*.yml'],
+      parser: 'yaml-eslint-parser'
+    },
+    {
+      files: ['**/*.json', '**/*.json5'],
       parser: 'jsonc-eslint-parser'
     },
     {
@@ -51,7 +73,6 @@ module.exports = {
               'funding',
               'author',
               'type',
-              'publishConfig',
               'files',
               'exports',
               'main',
@@ -72,11 +93,11 @@ module.exports = {
       }
     },
     {
-      files: ['*.md'],
-      parser: 'markdown-eslint-parser'
+      files: ['**/*.md'],
+      processor: 'markdown/markdown'
     },
     {
-      files: ['*.md.js', '*.md.javascript'],
+      files: ['**/*.md/*.js', '**/*.md/*.javascript'],
       parserOptions: {
         ecmaFeatures: {
           impliedStrict: true
@@ -96,6 +117,15 @@ module.exports = {
     }
   ],
   rules: {
-    'no-restricted-globals': ['error', ...confusingBrowserGlobals]
+    'no-restricted-globals': ['error', ...confusingBrowserGlobals],
+
+    'unicorn/prefer-module': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        case: 'kebabCase',
+        ignore: ['^README']
+      }
+    ]
   }
 }

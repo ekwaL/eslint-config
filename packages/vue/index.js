@@ -16,6 +16,7 @@ module.exports = {
         }
       }
     },
+
     {
       files: ['**/*shims*.d.ts'],
       rules: {
@@ -31,16 +32,12 @@ module.exports = {
       'warn',
       {
         singleline: {
-          max: 3,
-          allowFirstLine: true
+          max: 3
         },
         multiline: {
-          max: 1,
-          allowFirstLine: false
+          max: 1
         }
       }
     ]
-    // this rule, if on, would require explicit return type on the `render` function
-    // '@typescript-eslint/explicit-function-return-type': 'off'
   }
 }

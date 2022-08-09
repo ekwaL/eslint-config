@@ -3,22 +3,19 @@
   "version": "0.2.0",
   "license": "MIT",
   "author": "ekwaL <ekwal@protonmail.com>",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "index.js"
   ],
   "main": "index.js",
   "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
-    "eslint": ">=7.30.0"
+    "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@ekwal/eslint-config-prettier": "^0.2.0",
-    "@ekwal/eslint-config-vue": "^0.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.30.0"
+    "@ekwal/eslint-config-prettier": "*",
+    "@ekwal/eslint-config-vue": "*"
   }
 }
