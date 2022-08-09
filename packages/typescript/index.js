@@ -4,7 +4,6 @@ const typescriptConfig =
 module.exports = {
   plugins: ['@typescript-eslint'],
   parserOptions: {
-    tsconfigRootDir: __dirname,
     project: ['./tsconfig.json']
   },
   extends: [
