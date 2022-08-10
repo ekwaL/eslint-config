@@ -1,20 +1,21 @@
-const typescriptConfig =
-  require('eslint-config-standard-with-typescript').overrides
+const typescriptConfig = require('eslint-config-standard-with-typescript')
+  .overrides[0]
+
+typescriptConfig.extends = [
+  'plugin:import/typescript',
+  'plugin:@typescript-eslint/recommended-requiring-type-checking'
+]
 
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: [
-    '@ekwal/eslint-config-base',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
-  ],
+  extends: ['@ekwal/eslint-config-base'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] }
     }
   },
   overrides: [
-    ...typescriptConfig,
+    typescriptConfig,
     {
       files: ['**/*.test.ts', '**/*.spec.ts', 'test/**/*.ts'],
       env: {
